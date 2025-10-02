@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Main View</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+     </property>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_Input">
+       <property name="sizeConstraint">
+        <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_Input">
+         <property name="text">
+          <string>Input Paragraph:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QTextEdit" name="textEdit_Input">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding"/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" rowspan="2" alignment="Qt::AlignmentFlag::AlignBottom">
+        <widget class="QPushButton" name="pushButton_Summarize">
+         <property name="text">
+          <string>Summarize</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_Output">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_Output">
+         <property name="text">
+          <string>Output Paragraph:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QTextEdit" name="textEdit_Output">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding"/>
+        </property>
+        </widget>
+       </item>
+       <item row="0" column="1" rowspan="2" alignment="Qt::AlignmentFlag::AlignBottom">
+        <widget class="QPushButton" name="pushButton_Save">
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
