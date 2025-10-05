@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(800, 615)
+        MainWindow.resize(796, 607)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setEnabled(True)
@@ -55,6 +55,11 @@ class Ui_MainWindow(object):
 
 
         self.verticalLayout.addLayout(self.gridLayout_Input)
+
+        self.label_Progress = QLabel(self.centralwidget)
+        self.label_Progress.setObjectName(u"label_Progress")
+
+        self.verticalLayout.addWidget(self.label_Progress)
 
         self.gridLayout_Output = QGridLayout()
         self.gridLayout_Output.setObjectName(u"gridLayout_Output")
@@ -89,6 +94,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Main View", None))
         self.label_Input.setText(QCoreApplication.translate("MainWindow", u"Input Paragraph:", None))
         self.pushButton_Summarize.setText(QCoreApplication.translate("MainWindow", u"Summarize", None))
+        self.label_Progress.setText("")
         self.label_Output.setText(QCoreApplication.translate("MainWindow", u"Output Paragraph:", None))
         self.pushButton_Save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
     # retranslateUi

@@ -19,9 +19,22 @@
 5. Run the command below to activate the UI designer: `pyside6-designer`
 
 ### **1.2 UI Development using PySide6**
-1. Save the ui desgined in .ui under the `/view` folder and convert the .ui file to .py in the terminal: `pyside6-uic view/main_view.ui -o view/main_view_ui.py`
+1. Save the ui desgined in .ui under the `/frontend` folder and convert the .ui file to .py in the terminal: `pyside6-uic frontend/main_view.ui -o frontend/main_view_ui.py`
 2. Create a main_view.py to execute the main_view_ui.py
 3. Run the command: `python view/main_view.py` for runtime execution of GUI
 
 
+### **1.3 Frontend with MVC Architecture setup**
+1. Separate the functions into `main_model.py`, `main_view.py`, and `main_controller.py`, where `main.py` will initialize all three modules.
+2. Implement the `main_model.py` module to call the exposed API for running the summarizer.
 
+
+### **1.4 Backend microservice development with FastAPI**
+1. 
+
+
+### **1.5 Launch the microservice**
+1. Change directory cd to the location where the backend/ folder is located.
+2. Run the service (Option 1): `uvicorn backend.summarizer:app --reload`, (Option 2): `python backend/summarizer.py`
+
+ 

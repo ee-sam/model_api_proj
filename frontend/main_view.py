@@ -7,10 +7,12 @@ class MainView(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
 
-    def get_input_txt(self):
+        self.textEdit_Output.setReadOnly(True)
+
+    def get_input_text(self):
         return self.textEdit_Input.toPlainText()
     
-    def set_output_txt(self, text):
+    def set_output_text(self, text):
         self.textEdit_Output.setPlainText(text)
 
 
