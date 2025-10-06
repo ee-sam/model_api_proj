@@ -58,6 +58,7 @@ class Ui_MainWindow(object):
 
         self.label_Progress = QLabel(self.centralwidget)
         self.label_Progress.setObjectName(u"label_Progress")
+        self.label_Progress.setStyleSheet("color: blue;")
 
         self.verticalLayout.addWidget(self.label_Progress)
 

@@ -5,7 +5,6 @@ from contextlib import asynccontextmanager
 
 import os
 import sys
-import torch
 
 def get_base_path():
     if getattr(sys, 'frozen', False):

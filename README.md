@@ -37,4 +37,5 @@
 1. Change directory cd to the location where the backend/ folder is located.
 2. Run the service (Option 1): `uvicorn backend.summarizer:app --reload`, (Option 2): `python backend/summarizer.py`
 
- 
+### **TODO**
+1. Update non-blocking version of GUI with a background worker
